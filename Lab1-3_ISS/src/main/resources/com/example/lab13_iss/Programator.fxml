@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="184.0" layoutY="14.0" text="Interfata Programator" />
+        <TableView fx:id="bugTable" layoutX="45.0" layoutY="50.0" prefHeight="200.0" prefWidth="379.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Denumire" />
+                <TableColumn prefWidth="225.0" text="Descriere" />
+                <TableColumn prefWidth="75.0" text="Status" />
+            </columns>
+        </TableView>
+        <Button layoutX="194.0" layoutY="261.0" mnemonicParsing="false" onAction="#fixBugAction" text="Rezolva Bug" />
+    </children>
+</AnchorPane>
