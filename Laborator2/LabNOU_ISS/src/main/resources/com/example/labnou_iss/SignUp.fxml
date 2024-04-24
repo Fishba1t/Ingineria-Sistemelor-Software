@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.labnou_iss.controller.SignUpController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <VBox alignment="CENTER" layoutX="300" layoutY="175" spacing="40">
+            <TextField fx:id="usernameField" prefHeight="45.0" prefWidth="150.0" promptText="Username" />
+            <TextField fx:id="passwordField" prefHeight="45.0" prefWidth="150.0" promptText="Password" />
+            <TextField fx:id="positionField" prefHeight="45.0" prefWidth="150.0" promptText="Position" />
+            <Button prefWidth="150.0" prefHeight="45.0" mnemonicParsing="false" onAction="#signup" text="Sign up" textAlignment="CENTER"/>
+        </VBox>
+    </children>
+
+</AnchorPane>

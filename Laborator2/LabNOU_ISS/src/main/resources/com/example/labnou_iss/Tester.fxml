@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labnou_iss.controller.TesterController">
+    <children>
+        <Label layoutX="187.0" layoutY="20.0" text="Interfata Tester" />
+        <TableView fx:id="bugTable" layoutX="45.0" layoutY="50.0" prefHeight="200.0" prefWidth="379.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Denumire" />
+                <TableColumn prefWidth="225.0" text="Descriere" />
+                <TableColumn prefWidth="75.0" text="Status" />
+            </columns>
+        </TableView>
+        <Button layoutX="186.0" layoutY="261.0" mnemonicParsing="false" text="Sesizare Bug" />
+<!--        onAction="#reportBugAction" -->
+    </children>
+</AnchorPane>

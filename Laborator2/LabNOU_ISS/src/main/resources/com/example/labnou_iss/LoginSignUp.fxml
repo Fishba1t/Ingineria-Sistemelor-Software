@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labnou_iss.controller.LoginSignUpController">
+    <children>
+        <Label layoutX="157.0" layoutY="32.0" text="Log in / Sign up" />
+        <Label layoutX="45.0" layoutY="74.0" text="Username:" />
+        <TextField fx:id="usernameField" layoutX="145.0" layoutY="70.0" promptText="Introduceti username-ul" />
+        <Label layoutX="43.0" layoutY="116.0" text="Parola:" />
+        <PasswordField fx:id="passwordField" layoutX="145.0" layoutY="112.0" promptText="Introduceti parola" />
+        <Button layoutX="80.0" layoutY="158.0" mnemonicParsing="false" onAction="#loginAction" text="Log in" />
+        <Button layoutX="220.0" layoutY="158.0" mnemonicParsing="false" onAction="#signupAction" text="Sign up" />
+    </children>
+</AnchorPane>
