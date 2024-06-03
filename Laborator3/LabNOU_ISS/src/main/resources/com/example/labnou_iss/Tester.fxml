@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="306.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labnou_iss.controller.TesterController">
+
+    <children>
+        <Label layoutY="20.0" text="Interfata Tester" />
+
+        <TableView fx:id="bugTable" layoutX="45.0" layoutY="50.0" prefHeight="200.0" prefWidth="379.0">
+            <columns>
+                <!-- Denumire Column -->
+                <TableColumn fx:id="denumireColumn" prefWidth="75.0" text="Denumire">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="denumire" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <!-- Descriere Column -->
+                <TableColumn fx:id="descriereColumn" prefWidth="225.0" text="Descriere">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="descriere" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <!-- Status Column -->
+                <TableColumn fx:id="statusColumn" prefWidth="75.0" text="Status">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="status" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        <!-- Button for Sesizare Bug -->
+        <Button layoutX="186.0" layoutY="261.0" mnemonicParsing="false" onAction="#sesizareBug" text="Sesizare Bug" />
+    </children>
+</AnchorPane>
